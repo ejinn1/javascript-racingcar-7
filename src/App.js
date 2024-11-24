@@ -4,7 +4,7 @@ class App {
   async run() {
     const carController = new Controller();
 
-    carController.start();
+    await carController.start();
   }
 }
 

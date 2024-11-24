@@ -10,7 +10,7 @@ class OutputView {
   }
 
   static displayRaceResult(winners) {
-    Console.print(`최종 우승자 ${winners.join(', ')}`);
+    Console.print(`최종 우승자 : ${winners.join(', ')}`);
   }
 }
 export default OutputView;

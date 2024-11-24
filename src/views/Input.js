@@ -13,7 +13,8 @@ class InputView {
         Validator.validateCarNames(carNames);
         return carNames;
       } catch (error) {
-        console.log(error.message);
+        Console.print(error.message);
+        throw error;
       }
     }
   }
@@ -28,7 +29,8 @@ class InputView {
         Validator.validateTryCount(count);
         return Number(count);
       } catch (error) {
-        console.log(error.message);
+        Console.print(error.message);
+        throw error;
       }
     }
   }
