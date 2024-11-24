@@ -7,6 +7,10 @@ class Car {
   move() {
     this.position += 1;
   }
+
+  getStatus() {
+    return `${this.name} : ${'-'.repeat(this.position)}`;
+  }
 }
 
 export default Car;

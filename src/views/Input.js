@@ -1,7 +1,7 @@
 import { Console } from '@woowacourse/mission-utils';
 import Validator from '../utils/Validator.js';
 
-class Input {
+class InputView {
   static async getCarName() {
     while (true) {
       const input = await Console.readLineAsync(
@@ -34,4 +34,4 @@ class Input {
   }
 }
 
-export default Input;
+export default InputView;

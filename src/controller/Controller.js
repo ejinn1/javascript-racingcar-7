@@ -1,4 +1,6 @@
 import RaceService from '../service/RaceService.js';
+import InputView from '../views/Input.js';
+import OutputView from '../views/Output.js';
 
 class Controller {
   constructor() {
@@ -6,10 +8,11 @@ class Controller {
   }
 
   async start() {
-    const carNames = await inputView.getCarName();
-    const tryCount = await inputView.getTryCount();
+    const carNames = await InputView.getCarName();
+    const tryCount = await InputView.getTryCount();
 
     const raceResults = this.raceService.runRace(carNames, tryCount);
+    OutputView.displayRaceResult(raceResults);
   }
 }
 
