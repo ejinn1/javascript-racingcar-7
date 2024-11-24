@@ -4,7 +4,8 @@ class App {
   async run() {
     const inputView = new Input();
 
-    const carNames = await inputView.propmtCarName();
+    const carNames = await inputView.getCarName();
+    const tryCount = await inputView.getTryCount();
   }
 }
 
