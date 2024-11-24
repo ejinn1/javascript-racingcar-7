@@ -12,3 +12,5 @@ class Controller {
     const raceResults = this.raceService.runRace(carNames, tryCount);
   }
 }
+
+export default Controller;

@@ -1,5 +1,6 @@
 import { MissionUtils } from '@woowacourse/mission-utils';
 import Car from '../model/Car.js';
+import Race from '../model/Race.js';
 
 class RaceService {
   runRace(carNames, tryCount) {
@@ -12,6 +13,9 @@ class RaceService {
         }
       });
     }
+
+    const race = new Race();
+    return race.getWinners().map((winner) => winner.name);
   }
 }
 
